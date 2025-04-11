@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Winger IT Solutions | Advanced AI, Software & Cybersecurity Solutions</title>
+    <meta name="title" content="Winger IT Solutions | Advanced AI, Software & Cybersecurity Solutions">
+    <meta name="description" content="Winger IT Solutions provides cutting-edge AI development, custom software solutions, embedded firmware, and cybersecurity services to transform your business with technology.">
+    <meta name="keywords" content="AI development, custom software, cybersecurity, embedded systems, machine learning, IoT solutions, technology consulting">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wingeritsolutions.com/">
+    <meta property="og:title" content="Winger IT Solutions | Advanced AI, Software & Cybersecurity Solutions">
+    <meta property="og:description" content="Transform your business with cutting-edge technology solutions from Winger IT Solutions.">
+    <meta property="og:image" content="https://wingeritsolutions.com/images/og-image.jpg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://wingeritsolutions.com/">
+    <meta property="twitter:title" content="Winger IT Solutions | Advanced AI, Software & Cybersecurity Solutions">
+    <meta property="twitter:description" content="Transform your business with cutting-edge technology solutions from Winger IT Solutions.">
+    <meta property="twitter:image" content="https://wingeritsolutions.com/images/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://wingeritsolutions.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Structured Data / Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Winger IT Solutions",
+      "url": "https://wingeritsolutions.com",
+      "logo": "https://wingeritsolutions.com/images/logo.png",
+      "description": "Providing cutting-edge AI development, custom software solutions, and cybersecurity services",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Tech Park Drive, Suite 500",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94107",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-123-4567",
+        "contactType": "customer service",
+        "email": "info@wingeritsolutions.com",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://www.facebook.com/wingeritsolutions",
+        "https://www.twitter.com/wingeritsolutions",
+        "https://www.linkedin.com/company/wingeritsolutions"
+      ]
+    }
+    </script>
+    
+    <!-- CSS and JavaScript Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDYQ0RKZ2L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZDYQ0RKZ2L');
+</script>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #7c3aed;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            background-color: #f8fafc;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.9)), 
+                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1565&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .login-modal {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .expertise-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .expertise-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .reveal-animation {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .reveal-animation.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .typing-text {
+            border-right: 2px solid;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--primary) }
+        }
+        
+        .glow {
+            box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
+        }
+        
+        .glow:hover {
+            box-shadow: 0 0 25px rgba(37, 99, 235, 0.8);
+        }
+        
+        .blur-reveal {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .blur-reveal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(5px);
+            z-index: 1;
+            transition: all 0.5s ease;
+        }
+        
+        .blur-reveal:hover::before {
+            backdrop-filter: blur(0);
+            background: rgba(255, 255, 255, 0);
+        }
+        
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Login Modal -->
+    <!-- <div id="loginModal" class="fixed inset-0 z-50 flex items-center justify-center hidden transition-opacity duration-300">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="login-modal rounded-xl p-8 max-w-md w-full relative z-10 transform transition-all duration-500 scale-90 opacity-0">
+            <button id="closeModal" class="absolute top-4 right-4 text-white hover:text-gray-200">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-white mb-2">Welcome Back</h2>
+                <p class="text-gray-200">Are you ready to utilize technology to its fullest?</p>
+            </div>
+            <form class="space-y-4">
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-200 mb-1">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-gray-300 border-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-200 mb-1">Password</label>
+                    <input type="password" id="password" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-gray-300 border-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <input id="remember" type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                        <label for="remember" class="ml-2 block text-sm text-gray-200">Remember me</label>
+                    </div>
+                    <a href="#" class="text-sm text-blue-300 hover:text-blue-200">Forgot password?</a>
+                </div>
+                <button type="submit" class="w-full gradient-bg text-white py-3 px-4 rounded-lg font-medium hover:opacity-90 transition-opacity">Sign In</button>
+            </form>
+            <div class="mt-6 text-center">
+                <p class="text-gray-300">Don't have an account? <a href="#" class="text-blue-300 hover:text-blue-200 font-medium">Sign up</a></p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div id="loginModal" class="fixed inset-0 z-50 flex items-center justify-center hidden transition-opacity duration-300">
+        <!-- Dark transparent background overlay with blur effect -->
+        <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm"></div>
+      
+        <!-- Modal content with contact form inside -->
+        <div class="login-modal relative z-10 bg-gray-900 bg-opacity-70 border border-gray-700 rounded-xl p-6 max-w-6xl w-full transform transition-all duration-500 scale-90 opacity-0 overflow-y-auto max-h-[90vh] shadow-xl text-white">
+          
+          <!-- Close button with better visibility -->
+          <button id="closeModal" class="absolute top-4 right-4 text-gray-300 hover:text-white z-50 transition-colors">
+            <i class="fas fa-times text-2xl"></i>
+          </button>
+      
+          <!-- Get in Touch Section Content -->
+          <div class="grid md:grid-cols-2 gap-12 mt-8">
+            <div>
+              <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Get in <span class="gradient-text">Touch</span></h2>
+              <p class="text-xl text-gray-300 mb-8">
+                Have a project in mind or want to learn more about our services? Reach out to us—we'd love to hear from you.
+              </p>
+      
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 gradient-bg rounded-full p-3 text-white mr-4">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg text-white mb-1">Our Office</h4>
+                    <p class="text-gray-300">#669 D, 2nd and 3rd floor, Brindavan Nagar,<br>80 feet road, 1st stage, 2nd Block, HBR layout, Bengaluru, Karnataka 560043</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 gradient-bg rounded-full p-3 text-white mr-4">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg text-white mb-1">Email Us</h4>
+                    <p class="text-gray-300">contact@wingerit.com<br>hr@wingerit.in</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 gradient-bg rounded-full p-3 text-white mr-4">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg text-white mb-1">Call Us</h4>
+                    <p class="text-gray-300">91-9035261715<br>(080) 8893 5304<br>Mon-Sat, 9:30am-6:30pm</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="mt-8">
+                <h4 class="font-bold text-lg text-white mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+               
+                  <a href="#" class="gradient-bg w-10 h-10 rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+         
+                  <a href="#" class="gradient-bg w-10 h-10 rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Contact Form - Dark Theme -->
+            <div>
+              <div class="bg-gray-800 bg-opacity-70 rounded-2xl p-8 border border-gray-700">
+                <h3 class="text-2xl font-bold text-white mb-6">Send Us a Message</h3>
+                <form class="space-y-4">
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <label for="first-name" class="block text-sm font-medium text-gray-300 mb-1">First Name</label>
+                      <input type="text" id="first-name" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                      <label for="last-name" class="block text-sm font-medium text-gray-300 mb-1">Last Name</label>
+                      <input type="text" id="last-name" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                  </div>
+                  <div>
+                    <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  </div>
+                  <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone</label>
+                    <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  </div>
+                  <div>
+                    <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">Subject</label>
+                    <select id="subject" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                      <option value="" disabled selected>Select a subject</option>
+                      <option value="sales">Sales Inquiry</option>
+                      <option value="support">Technical Support</option>
+                      <option value="partnership">Partnership Opportunity</option>
+                      <option value="Project Requirment">Project Requirment</option>
+                      <option value="careers">Careers</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                    <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                  </div>
+                  <button type="submit" class="w-full gradient-bg text-white py-3 px-4 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      
+<!-- Navigation -->
+<nav style="margin-top: 50px;" class="fixed w-full z-40 bg-white shadow-sm">
+  <!-- Full width with horizontal padding -->
+  <div class="px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16 sm:h-20">
+      
+      <!-- Logo - Adjusted size for 1360×768 -->
+      <div class="flex items-center space-x-2">
+        <img src="logo.png" alt="Logo" class="h-20 sm:h-24 md:h-28 lg:h-30 xl:h-34 w-auto object-contain" />
+      </div>
+      
+      
+
+      <!-- Desktop Navigation Links - Adjusted for medium screens -->
+      <div class="hidden md:flex items-center space-x-6">
+        <div class="flex space-x-4">
+          <a href="#home" class="text-gray-700 hover:text-blue-600 px-2 py-1 font-medium text-base sm:text-lg">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-blue-600 px-2 py-1 font-medium text-base sm:text-lg">About</a>
+          <a href="#expertise" class="text-gray-700 hover:text-blue-600 px-2 py-1 font-medium text-base sm:text-lg">Expertise</a>
+          <a href="#services" class="text-gray-700 hover:text-blue-600 px-2 py-1 font-medium text-base sm:text-lg">Services</a>
+          <a href="#training" class="text-gray-700 hover:text-blue-600 px-2 py-1 font-medium text-base sm:text-lg">Ai-Training</a>
+          <a href="https://www.wingerit.com/" class="text-gray-700 hover:text-blue-600 px-2 py-1 font-medium text-base sm:text-lg">IT-Infrastructure</a>
+        </div>
+        <button id="loginBtn" class="gradient-bg text-white px-4 py-1.5 rounded-full font-medium hover:opacity-90 transition-opacity glow text-base sm:text-lg">
+          Call Now
+        </button>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="mobileMenuBtn" class="text-gray-700 hover:text-blue-600">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="md:hidden hidden bg-white shadow-lg px-4 pb-4">
+    <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-sm">Home</a>
+    <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-sm">About</a>
+    <a href="#expertise" class="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-sm">Expertise</a>
+    <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-sm">Services</a>
+    <a href="#training" class="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-sm">Ai-Training</a>
+    <a href="https://www.wingerit.com/" class="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-sm">IT-Infrastructure</a>
+    <button id="mobileLoginBtn" class="block w-full text-left px-3 py-2 gradient-text font-medium text-sm">
+        Call Now
+    </button>
+  </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <div  class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="img1.webp" style="filter: blur(6px) brightness(40%); display: block;">
+
+
+                <div class="content">
+                    
+                    
+                        <div class="title">Are you ready to use Technology to its</div>
+                        <div class="topic">Fullest?</div>
+                        <div class="des">
+                            Winger helps you build cutting-edge software with 100% optimization.You focus on growing your business we'll handle the tech behind the scenes.
+                        </div>
+                        <div class="buttons">
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="img2.webp" style="filter: blur(6px) brightness(40%); display: block;">
+                <div class="content">
+                    
+                    <div class="title">Firmware development for hardware integration</div>
+                    <div class="topic">Embedded Systems</div>
+                    <div class="des">
+                        We develop optimized firmware for seamless hardware integration ensuring reliable, scalable, and efficient communication between devices and systems.                   
+                     </div>
+                    <div class="buttons">
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img3.webp" style="filter: blur(6px) brightness(40%); display: block;">
+                <div class="content">
+                    
+                    <div   class="title">Leverage gen AI and agentic AI to accelerate your</div>
+
+                    <!-- Firmware development for hardware integration -->
+
+
+                    <div class="topic">applications</div>
+                    <div class="des">
+                        <!-- We develop optimized firmware for seamless hardware integration ensuring reliable, scalable, and efficient communication between devices and systems. -->
+                        Empower your business with intelligent AI and agentic systems that automate decisions, adapt to changing needs, and drive efficiency like never before.
+                    </div>
+                    <div class="buttons">
+                     
+                        <!-- <button>SUBSCRIBE</button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img4.webp" style="filter: blur(6px) brightness(40%); display: block;">
+                <div class="content">
+                 
+                    <div class="title">Next-gen software solutions for smarter business</div>
+                    <div class="topic">operations</div>
+                    <div class="des">
+                        Empower your business with scalable, high-performance software tailored to your unique goals—boost efficiency, enhance user experience, and drive innovation.
+                    </div>
+                    <div class="buttons">
+                        <!-- <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="item">
+                <img src="img5.webp" style="filter: blur(6px) brightness(40%); display: block;">
+                <div class="content">
+                 
+                    <div  class="title">Secure your IT infrastructure resources with cybersecurity</div>
+                    <div class="topic">measures</div>
+                    <div class="des">
+                        Protect your digital assets and ensure business continuity with robust cybersecurity solutions tailored to your infrastructure and threat landscape.
+                    </div>
+                    <div class="buttons">
+                        <!-- <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="img1.webp">
+                <div class="content">
+                    <!-- <div class="title">
+                        Winger
+                    </div> -->
+                    <!-- <div class="description">
+                        Description
+                    </div> -->
+                </div>
+            </div>
+            <div class="item">
+                <img src="img2.webp">
+                <div class="content">
+                    <!-- <div class="title">
+                        Ai
+                    </div> -->
+                    <!-- <div class="description">
+                        Description
+                    </div> -->
+                </div>
+            </div>
+            <div class="item">
+                <img src="img3.webp">
+                <div class="content">
+                    <!-- <div class="title">
+                        Embedded
+                    </div> -->
+                    <!-- <div class="description">
+                        Description.carousel .list .item .content {
+    position: absolute;
+    top: 20%;
+    width: 90%; /* Changed from fixed width to percentage */
+    max-width: none; /* Remove max-width constraint */
+    left: 5%; /* Align to left with some margin */
+    transform: none;
+    padding-right: 5%; /* Balanced padding */
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+                    </div> -->
+                </div>
+            </div>
+            <div class="item">
+                <img src="img4.webp">
+                <div class="content">
+                    <!-- <div class="title">
+                        Cybersecurity
+                    </div> -->
+                    <!-- <div class="description">
+                        Description
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img5.webp">
+                <div class="content">
+                    <!-- <div class="title">
+                        Cybersecurity
+                    </div> -->
+                    <!-- <div class="description">
+                        Description
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal-animation">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About <span class="gradient-text">WingerIT Solutions</span></h2>
+                <div class="w-20 h-1 gradient-bg mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We are a team of passionate technologists dedicated to pushing the boundaries of what's possible with software.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="reveal-animation">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Our Team" class="w-full h-auto object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-2xl font-bold">Innovation at Our Core</h3>
+                            <p class="text-gray-200">Since 2015</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative animate-on-scroll">
+                    <!-- Gradient Card Behind -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-pink-500 rounded-lg transform rotate-3 scale-[1.03] opacity-40 z-0"></div>
+                  
+                    <!-- White Foreground Card -->
+                    <div class="relative bg-white p-8 rounded-lg shadow-lg border border-gray-100 z-10">
+                      <h3 class="text-2xl font-bold mb-4 text-gray-800">Driving Digital Transformation</h3>
+                      <p class="text-gray-700 mb-6">
+                        WingerIT Solutions was founded with a singular vision: to help businesses harness the power of technology to solve complex problems and create new opportunities. Our team brings together decades of experience across industries and technologies.
+                      </p>
+                  
+                      <ul class="space-y-4">
+                        <li class="flex items-start">
+                          <svg class="w-5 h-5 text-blue-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                          </svg>
+                          <div>
+                            <span class="font-semibold text-gray-900">Security-First Approach</span>
+                            <p class="text-sm text-gray-600">Security is integrated from design to deployment to keep systems safe.</p>
+                          </div>
+                        </li>
+                  
+                        <li class="flex items-start">
+                          <svg class="w-5 h-5 text-blue-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                          </svg>
+                          <div>
+                            <span class="font-semibold text-gray-900">Client-Centric Approach</span>
+                            <p class="text-sm text-gray-600">Your success is our success. We support you every step of the way.</p>
+                          </div>
+                        </li>
+                  
+                        <li class="flex items-start">
+                          <svg class="w-5 h-5 text-blue-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                          </svg>
+                          <div>
+                            <span class="font-semibold text-gray-900">Agile Methodology</span>
+                            <p class="text-sm text-gray-600">We adapt quickly to changing requirements to deliver optimal results.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  
+            </div>
+
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 text-center animate-on-scroll">
+                  <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path>
+                    </svg>
+                  </div>
+                  <div class="stat-value" data-value="50" data-suffix="+">0+</div>
+                  <p class="text-gray-600">Enterprise Clients</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 text-center animate-on-scroll">
+                  <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                  </div>
+                  <div class="stat-value" data-value="100" data-suffix="+">0+</div>
+                  <p class="text-gray-600">Projects Completed</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 text-center animate-on-scroll">
+                  <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                  </div>
+                  <div class="stat-value" data-value="25" data-suffix="+">0+</div>
+                  <p class="text-gray-600">Expert Developers</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 text-center animate-on-scroll">
+                  <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                  </div>
+                  <div class="stat-value" data-value="8" data-suffix=" yrs">0 yrs</div>
+                  <p class="text-gray-600">Industry Experience</p>
+                </div>
+              </div>
+            
+            <!-- Mission & Vision -->
+            <div class="grid md:grid-cols-2 gap-8 mt-16">
+                <div class="bg-gray-50 rounded-2xl p-8 reveal-animation card-hover">
+                    <div class="gradient-bg w-12 h-12 rounded-full flex items-center justify-center text-white mb-6">
+                        <i class="fas fa-bullseye text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                    <p class="text-gray-600">
+                        To empower businesses with transformative technology solutions that drive innovation, efficiency, and growth. We bridge the gap between complex technical challenges and practical business solutions.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 reveal-animation card-hover">
+                    <div class="gradient-bg w-12 h-12 rounded-full flex items-center justify-center text-white mb-6">
+                        <i class="fas fa-eye text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                    <p class="text-gray-600">
+                        To be the most trusted technology partner for businesses worldwide, recognized for our technical excellence, innovative approach, and unwavering commitment to client success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Services Section -->
+  <section id="expertise" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our <span class="gradient-text">Expertise</span></h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive software development solutions to drive your business forward.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- AI & ML Service -->
+        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+          <div class="h-2 bg-gradient-to-r from-blue-400 to-indigo-600"></div>
+          <div class="p-6">
+            <div class="w-14 h-14 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">AI & Machine Learning</h3>
+            <p class="text-gray-600 mb-4">Harness the power of artificial intelligence to gain insights, automate processes, and create intelligent applications.</p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Generative AI
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Computer Vision
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Natural Language Processing
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Recommendation Systems
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+        
+        <!-- Full-Stack Development Service -->
+        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+          <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-600"></div>
+          <div class="p-6">
+            <div class="w-14 h-14 rounded-lg bg-purple-100 flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Full-Stack Development</h3>
+            <p class="text-gray-600 mb-4">End-to-end web and mobile application development with a focus on performance, scalability, and user experience.</p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Web Applications
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Mobile Applications
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                API Development
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Cloud-Native Applications
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+        
+        <!-- Embedded Firmware Service -->
+        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+          <div class="h-2 bg-gradient-to-r from-green-400 to-teal-600"></div>
+          <div class="p-6">
+            <div class="w-14 h-14 rounded-lg bg-green-100 flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Embedded Firmware</h3>
+            <p class="text-gray-600 mb-4">Low-level software development for hardware devices with a focus on reliability, efficiency, and real-time performance.</p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                IoT Device Firmware
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Real-Time Operating Systems
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Hardware-Software Integration
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Embedded Systems Optimization
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        
+        <!-- Cybersecurity Service -->
+        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+          <div class="h-2 bg-gradient-to-r from-red-400 to-orange-600"></div>
+          <div class="p-6">
+            <div class="w-14 h-14 rounded-lg bg-red-100 flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Cybersecurity</h3>
+            <p class="text-gray-600 mb-4">Comprehensive security solutions to protect your systems and data from threats and vulnerabilities.</p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Security Assessments
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Threat Detection & Response
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Secure Architecture Design
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-600 mr-2" fill="blue" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Compliance & Governance
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal-animation">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our <span class="gradient-text">Services</span></h2>
+                <div class="w-20 h-1 gradient-bg mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive technology services designed to meet your business needs at every stage.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI Services -->
+                <div class="bg-gray-50 rounded-2xl p-8 reveal-animation card-hover">
+                    <div class="gradient-text text-4xl mb-6">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI Solutions</h3>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Generative AI Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Machine Learning Models</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Natural Language Processing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Computer Vision Systems</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Predictive Analytics</span>
+                        </li>
+                    </ul>
+                    <button class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-opacity">
+                        Explore AI Services
+                    </button>
+                </div>
+                
+                <!-- Software Services -->
+                <div class="bg-gray-50 rounded-2xl p-8 reveal-animation card-hover">
+                    <div class="gradient-text text-4xl mb-6">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Software Development</h3>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Custom Web Applications</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Enterprise Software</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Mobile App Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Cloud-Native Solutions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>API & Integration Services</span>
+                        </li>
+                    </ul>
+                    <button class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-opacity">
+                        Explore Software Services
+                    </button>
+                </div>
+                
+                <!-- IoT Services -->
+                <div class="bg-gray-50 rounded-2xl p-8 reveal-animation card-hover">
+                    <div class="gradient-text text-4xl mb-6">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">IoT & Embedded</h3>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Embedded Systems Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>IoT Platform Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Sensor Integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Edge Computing Solutions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Device Management Systems</span>
+                        </li>
+                    </ul>
+                    <button class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-opacity">
+                        Explore IoT Services
+                    </button>
+                </div>
+                
+                <!-- Security Services -->
+                <div class="bg-gray-50 rounded-2xl p-8 reveal-animation card-hover">
+                    <div class="gradient-text text-4xl mb-6">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Cybersecurity</h3>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Security Audits & Assessments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Penetration Testing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Secure Software Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Incident Response</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Security Awareness Training</span>
+                        </li>
+                    </ul>
+                    <button class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-opacity">
+                        Explore Security Services
+                    </button>
+                </div>
+                
+                <!-- Consulting Services -->
+                <div class="bg-gray-50 rounded-2xl p-8 reveal-animation card-hover">
+                    <div class="gradient-text text-4xl mb-6">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Technology Consulting</h3>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Digital Transformation Strategy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Technology Roadmapping</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Cloud Migration Planning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Architecture Design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>DevOps Implementation</span>
+                        </li>
+                    </ul>
+                    <button class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-opacity">
+                        Explore Consulting
+                    </button>
+                </div>
+                
+                <!-- Support Services -->
+                <div class="bg-gray-50 rounded-2xl p-8 reveal-animation card-hover">
+                    <div class="gradient-text text-4xl mb-6">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Support & Maintenance</h3>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>24/7 Technical Support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Software Updates & Patches</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Performance Optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Bug Fixes & Troubleshooting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Scalability Enhancements</span>
+                        </li>
+                    </ul>
+                    <button class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-opacity">
+                        Explore Support
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Training Section -->
+    <section id="training" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="reveal-animation">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        <span class="gradient-text">AI Skill Upskilling</span> for Your Team
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        Equip your workforce with the latest AI tools and techniques to enhance productivity and drive innovation.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 gradient-bg rounded-full p-3 text-white mr-4">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Comprehensive AI Training</h4>
+                                <p class="text-gray-300">
+                                    Hands-on workshops covering generative AI, machine learning, and practical applications for your industry.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 gradient-bg rounded-full p-3 text-white mr-4">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Tool-Specific Training</h4>
+                                <p class="text-gray-300">
+                                    Masterclass sessions on leading AI platforms like OpenAI, Anthropic, Midjourney, and more.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 gradient-bg rounded-full p-3 text-white mr-4">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Customized for Your Business</h4>
+                                <p class="text-gray-300">
+                                    Tailored programs that address your specific business challenges and opportunities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal-animation">
+                    <div class="relative bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                        <h3 class="text-2xl font-bold mb-6">Request Training Information</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="training-name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
+                                <input type="text" id="training-name" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="training-company" class="block text-sm font-medium text-gray-300 mb-1">Company</label>
+                                <input type="text" id="training-company" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="training-email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                                <input type="email" id="training-email" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="training-employees" class="block text-sm font-medium text-gray-300 mb-1">Number of Employees</label>
+                                <select id="training-employees" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="1-10">1-10</option>
+                                    <option value="11-50">11-50</option>
+                                    <option value="51-200">51-200</option>
+                                    <option value="201-500">201-500</option>
+                                    <option value="500+">500+</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full gradient-bg text-white py-3 px-4 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                                Get Training Details
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-2xl p-6 reveal-animation card-hover">
+                    <div class="gradient-text text-3xl mb-4">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Executive Briefings</h3>
+                    <p class="text-gray-300">
+                        Strategic overviews for leadership teams on AI opportunities, risks, and implementation roadmaps.
+                    </p>
+                </div>
+                <div class="bg-gray-800 rounded-2xl p-6 reveal-animation card-hover">
+                    <div class="gradient-text text-3xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Team Workshops</h3>
+                    <p class="text-gray-300">
+                        Interactive sessions focused on practical applications of AI tools in daily workflows.
+                    </p>
+                </div>
+                <div class="bg-gray-800 rounded-2xl p-6 reveal-animation card-hover">
+                    <div class="gradient-text text-3xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Technical Deep Dives</h3>
+                    <p class="text-gray-300">
+                        Advanced training for technical teams on AI model development and deployment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal-animation">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Client <span class="gradient-text">Testimonials</span></h2>
+                <div class="w-20 h-1 gradient-bg mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hear what our clients say about working with WingerIT Solutions.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 reveal-animation card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-gray-900">Sarah Johnson</h4>
+                            <p class="text-gray-600">CTO, TechForward Inc.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                        "WingerIT Solutions transformed our data infrastructure with their AI solutions. Their team delivered beyond our expectations with a system that's both powerful and easy to use."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 reveal-animation card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-gray-900">Michael Chen</h4>
+                            <p class="text-gray-600">Director of Engineering, OmniCorp</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                        "The custom software solution WingerIT Solutions built for us has streamlined our operations by 40%. Their attention to detail and commitment to quality is unmatched."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 reveal-animation card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Rodriguez">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-gray-900">Emily Rodriguez</h4>
+                            <p class="text-gray-600">CEO, SecureNet Solutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                        "After WingerIT Solutions conducted our security audit, we implemented their recommendations and saw a 75% reduction in vulnerability incidents. Their expertise is invaluable."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Client Logos -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+                <div class="flex justify-center reveal-animation">
+                    <img src="https://logo.clearbit.com/google.com" alt="Google" class="h-12 opacity-70 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="flex justify-center reveal-animation">
+                    <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" class="h-12 opacity-70 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="flex justify-center reveal-animation">
+                    <img src="https://logo.clearbit.com/amazon.com" alt="Amazon" class="h-12 opacity-70 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="flex justify-center reveal-animation">
+                    <img src="https://logo.clearbit.com/ibm.com" alt="IBM" class="h-12 opacity-70 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="flex justify-center reveal-animation">
+                    <img src="https://logo.clearbit.com/tesla.com" alt="Tesla" class="h-12 opacity-70 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="flex justify-center reveal-animation">
+                    <img src="https://logo.clearbit.com/salesforce.com" alt="Salesforce" class="h-12 opacity-70 hover:opacity-100 transition-opacity">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 reveal-animation">
+                Ready to Transform Your Business with Technology?
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto reveal-animation">
+                Let's discuss how we can help you achieve your goals with our cutting-edge solutions.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 reveal-animation">
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors">
+                    Get Started
+                </button>
+                <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-blue-600 transition-all">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="reveal-animation">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Get in <span class="gradient-text">Touch</span></h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Have a project in mind or want to learn more about our services? Reach out to us—we'd love to hear from you.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 gradient-bg rounded-full p-3 text-white mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-900 mb-1">Our Office</h4>
+                                <p class="text-gray-600">123 Tech Park Drive, Suite 500<br>San Francisco, CA 94107</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 gradient-bg rounded-full p-3 text-white mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-900 mb-1">Email Us</h4>
+                                <p class="text-gray-600">info@WingerIT Solutions.com<br>support@WingerIT Solutions.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 gradient-bg rounded-full p-3 text-white mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-900 mb-1">Call Us</h4>
+                                <p class="text-gray-600">+1 (555) 123-4567<br>Mon-Fri, 9am-5pm PST</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-lg text-gray-900 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="gradient-bg w-10 h-10 rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="gradient-bg w-10 h-10 rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="gradient-bg w-10 h-10 rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="gradient-bg w-10 h-10 rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reveal-animation">
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                    <input type="text" id="first-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                    <input type="text" id="last-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                <select id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="sales">Sales Inquiry</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="careers">Careers</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full gradient-bg text-white py-3 px-4 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 gradient-text">WingerIT Solutions</h3>
+                    <p class="text-gray-400">
+                        Transforming businesses with innovative technology solutions since 2015.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#expertise" class="text-gray-400 hover:text-white transition-colors">Expertise</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#training" class="text-gray-400 hover:text-white transition-colors">AI Training</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">AI Solutions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Software Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">IoT & Embedded</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cybersecurity</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to our newsletter for the latest updates and insights.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-gray-900">
+                        <button type="submit" class="gradient-bg px-4 py-2 rounded-r-lg hover:opacity-90 transition-opacity">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    &copy; 2025 WingerIT Solutions. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Login Modal
+        const loginBtn = document.getElementById('loginBtn');
+        const mobileLoginBtn = document.getElementById('mobileLoginBtn');
+        const loginModal = document.getElementById('loginModal');
+        const closeModal = document.getElementById('closeModal');
+        
+        function openModal() {
+            loginModal.classList.remove('hidden');
+            setTimeout(() => {
+                loginModal.querySelector('.login-modal').classList.remove('opacity-0', 'scale-90');
+                loginModal.querySelector('.login-modal').classList.add('opacity-100', 'scale-100');
+            }, 10);
+        }
+        
+        function closeModalFunc() {
+            loginModal.querySelector('.login-modal').classList.remove('opacity-100', 'scale-100');
+            loginModal.querySelector('.login-modal').classList.add('opacity-0', 'scale-90');
+            setTimeout(() => {
+                loginModal.classList.add('hidden');
+            }, 300);
+        }
+        
+        loginBtn.addEventListener('click', openModal);
+        mobileLoginBtn.addEventListener('click', openModal);
+        closeModal.addEventListener('click', closeModalFunc);
+        
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Scroll Reveal Animation
+        function revealOnScroll() {
+            const elements = document.querySelectorAll('.reveal-animation');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if(elementPosition < screenPosition) {
+                    element.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+        
+        // GSAP Animations
+        gsap.registerPlugin(ScrollTrigger);
+        
+        // Hero section animation
+        gsap.from('.hero-section h1', {
+            scrollTrigger: {
+                trigger: '.hero-section',
+                start: 'top top',
+                toggleActions: 'play none none none'
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            delay: 0.3
+        });
+        
+        gsap.from('.hero-section p', {
+            scrollTrigger: {
+                trigger: '.hero-section',
+                start: 'top top',
+                toggleActions: 'play none none none'
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            delay: 0.6
+        });
+        
+        gsap.from('.hero-section button', {
+            scrollTrigger: {
+                trigger: '.hero-section',
+                start: 'top top',
+                toggleActions: 'play none none none'
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            delay: 0.9,
+            stagger: 0.2
+        });
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if(!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Blur reveal effect
+        const blurRevealElements = document.querySelectorAll('.blur-reveal');
+        
+        blurRevealElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                element.querySelector('img').style.transform = 'scale(1.05)';
+            });
+            
+            element.addEventListener('mouseleave', () => {
+                element.querySelector('img').style.transform = 'scale(1)';
+            });
+        });
+        
+        // Typing animation
+        const typingText = document.querySelector('.typing-text');
+        if(typingText) {
+            setTimeout(() => {
+                typingText.style.borderRight = 'none';
+            }, 3500);
+        }
+    </script>
+        <script src="app.js"></script>
+</body>
+</html>
